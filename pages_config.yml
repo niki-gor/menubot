@@ -1,0 +1,38 @@
+- name: Бесплатные уроки и мастер-классы
+  keyboard:
+    - text: Пробные уроки курса "Путь к себе"
+      url: https://dowlatow.pro/test-drive-pks?gcpc=82f78
+    
+    - text: Как использовать МАК, чтобы найти лучшее решение в любой ситуации
+      url: https://abramova.mastervision.su/mak-find-solution/?utm_partner=1627&utm_source=autoweboffice&utm_medium=partners&utm_campaign=partnerId.1627&utm_content=goodsId.3500&utm_term=mainlink
+
+    - text: Найдите ключ к решению ваших внутренних конфликтов
+      url: https://abramova.iomp.space/mak-webinar/?utm_partner=500&utm_source=autoweboffice&utm_medium=partners&utm_campaign=partnerId.500&utm_content=goodsId.75&utm_term=mainlink
+
+    - text: Как обрести востребованную профессию МАК-коуча
+      url: https://dowlatow.pro/pks12_mak-kouching_ht?gcao=28097&gcpc=82f78
+
+
+- name: Обучающие курсы
+  keyboard:
+    - text: Курс "Путь к себе через МАК"
+      url: https://dowlatow.pro/put_k_sebe_cherez_mak?gcao=9811&gcpc=82f78
+    
+    - text: Курс "Метафорические Ассоциативные Карты"
+      url: https://abramova.mvacademy.ru/mak-web/course-1/?utm_partner=1627&utm_source=autoweboffice&utm_medium=partners&utm_campaign=partnerId.1627&utm_content=goodsId.3500&utm_term=linkId.350
+
+
+- name: Курсы с выдачей диплома
+  keyboard:
+    - text: Дипломный курс "МАК специалист"
+      url: https://abramova.iomp.space/mak-diplom-course/v2/?utm_partner=500&utm_source=autoweboffice&utm_medium=partners&utm_campaign=partnerId.500&utm_content=goodsId.75&utm_term=linkId.33
+    
+    - text: Дипломный курс "МАК.Проективный метод современной психологии"
+      url: https://iomp.ru/timetable/pages/abramova-mak-course?utm_partner=500&utm_source=autoweboffice&utm_medium=partners&utm_campaign=partnerId.500&utm_content=goodsId.676&utm_term=mainlink
+
+
+- name: Онлайн сервис по работе с МАК
+  keyboard:
+    - text: Онлайн сервис по работе с МАК
+      url: https://dowlatow.pro/sr/rate?gcao=18256&gcpc=82f78
+  
