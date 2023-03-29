@@ -1,12 +1,13 @@
 from aiogram import Bot, Dispatcher
 from aiogram.utils import executor
 
-from menubot.config_reader import config, handler_config
-from menubot.handler import setup_dispatcher
+from menubot.config import secrets, menu_config
+from menubot.handlers import setup_handlers
+
 
 if __name__ == "__main__":
-    bot = Bot(token=config.bot_token.get_secret_value())
+    bot = Bot(token=secrets.bot_token.get_secret_value())
     dp = Dispatcher(bot)
-    setup_dispatcher(dp, handler_config)
+    setup_handlers(dp, menu_config)
 
     executor.start_polling(dp, skip_updates=True)

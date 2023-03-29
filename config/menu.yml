@@ -1,0 +1,31 @@
+main_menu_text: '👇 Выберите, что Вам интересно'
+home_button_text: ⤴️ Главное меню
+pages:
+- name: Поисковики
+  keyboard:
+  - text: Гугл
+    url: https://google.com
+  
+  - text: Яндекс
+    url: https://ya.ru
+
+  - text: Мейл
+    url: https://mail.ru
+
+  - text: Bing
+    url: https://bing.com
+  
+  - text: DuckDuckGo
+    url: https://duckduckgo.com/
+
+
+- name: Соцсети
+  keyboard:
+  - text: ВК
+    url: https://vk.com
+  
+  - text: Reddit
+    url: https://reddit.com
+
+  - text: Stackoverflow
+    url: https://stackoverflow.com/
