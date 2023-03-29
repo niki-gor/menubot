@@ -1,4 +1,4 @@
-from pydantic import BaseModel, AnyHttpUrl, UUID4
+from pydantic import AnyHttpUrl, BaseModel
 
 
 class UrlButton(BaseModel):
@@ -9,10 +9,6 @@ class UrlButton(BaseModel):
 class Page(BaseModel):
     name: str
     keyboard: list[UrlButton]
-
-
-# class PageWithId(Page):
-#     page_id: str
 
 
 class HandlerConfig(BaseModel):

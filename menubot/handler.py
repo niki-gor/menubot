@@ -1,7 +1,7 @@
 from aiogram import Dispatcher, types
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from models import HandlerConfig, Page
+from menubot.models import HandlerConfig, Page
 
 
 class Setupper:

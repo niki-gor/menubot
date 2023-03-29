@@ -1,17 +1,10 @@
-import yaml
 from aiogram import Bot, Dispatcher
 from aiogram.utils import executor
 
-from config_reader import config
-from handler import setup_dispatcher
-from models import HandlerConfig, Page
+from menubot.config_reader import config, handler_config
+from menubot.handler import setup_dispatcher
 
 if __name__ == "__main__":
-    with open("pages_config.yml") as f:
-        data = yaml.safe_load(f)
-
-    handler_config = HandlerConfig(**data)
-
     bot = Bot(token=config.bot_token.get_secret_value())
     dp = Dispatcher(bot)
     setup_dispatcher(dp, handler_config)
