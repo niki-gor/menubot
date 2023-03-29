@@ -3,4 +3,5 @@ services:
   bot:
     build: .
     restart: always
-    
+    volumes:
+    - ./config:/app/config
