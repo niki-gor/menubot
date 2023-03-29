@@ -20,8 +20,8 @@ class HandlerSetupper:
             ]
         )
 
-    def get_page_callback_data(self, page: Page):
-        return self.PAGE_CALLBACK_DATA_PREFIX + page.name
+    def get_page_callback_data(self, page: Page) -> str:
+        return self.PAGE_CALLBACK_DATA_PREFIX + str(hash(page.name))
 
     def setup_greet(self):
         async def handler(message: types.Message):
