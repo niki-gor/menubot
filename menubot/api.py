@@ -61,8 +61,3 @@ class Router:
         dp.register_callback_query_handler(
             self._main_menu_callback_query_handler, text=self.HOME_PREFIX
         )
-
-
-def setup_routes(dp: Dispatcher, config: HandlerConfig):
-    router = Router(config)
-    router.setup_routes(dp)
