@@ -1,6 +1,6 @@
 main_menu_text: "👇 Выберите, что Вам интересно"
 home_button_text: "⤴️ Главное меню"
-page_name_prefix: "📝 {}"
+page_name_format: "📝 {}"
 pages:
 - name: Поисковики
   keyboard:
