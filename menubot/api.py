@@ -43,7 +43,7 @@ class Router:
 
     async def _main_menu_message_handler(self, message: types.Message):
         await message.answer(
-            self.config.main_menu_text, reply_markup=self.main_menu_keyboard
+            self.main_menu_text, reply_markup=self.main_menu_keyboard
         )
 
     async def _main_menu_callback_query_handler(self, call: types.CallbackQuery):
