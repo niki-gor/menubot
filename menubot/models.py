@@ -1,4 +1,5 @@
 from pydantic import AnyHttpUrl, BaseModel
+from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 class UrlButton(BaseModel):
@@ -14,4 +15,5 @@ class Page(BaseModel):
 class HandlerConfig(BaseModel):
     home_button_text: str
     main_menu_text: str
+    page_name_prefix: str
     pages: list[Page]
