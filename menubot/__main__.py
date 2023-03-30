@@ -10,5 +10,5 @@ if __name__ == "__main__":
     dp = Dispatcher(bot)
     router = Router(menu_config)
     router.setup_routes(dp)
-\
+
     executor.start_polling(dp, skip_updates=True)
