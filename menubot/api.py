@@ -33,26 +33,25 @@ class Router:
             )
 
     def _page_handler(self, page: PageDecorator):
+        kb = page.inline_keyboard.add(
+            InlineKeyboardButton(self.home_button_text, callback_data=self.HOME_PREFIX)
+        )
+
         async def handler(call: types.CallbackQuery):
             await call.message.answer(
-                text=f"{self.page_name_prefix}{page.name}",
-                reply_markup=page.inline_keyboard,
+                text=f"{self.page_name_prefix}{page.name}", reply_markup=kb
             )
 
         return handler
 
     async def _main_menu_message_handler(self, message: types.Message):
-        await message.answer(
-            self.main_menu_text, reply_markup=self.main_menu_keyboard
-        )
+        await message.answer(self.main_menu_text, reply_markup=self.main_menu_keyboard)
 
     async def _main_menu_callback_query_handler(self, call: types.CallbackQuery):
         await self._main_menu_message_handler(call.message)
 
     def setup_routes(self, dp: Dispatcher):
-        dp.register_message_handler(
-            self._main_menu_message_handler, commands=["start"]
-        )
+        dp.register_message_handler(self._main_menu_message_handler, commands=["start"])
 
         for page in self.pages:
             dp.register_callback_query_handler(
