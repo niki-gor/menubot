@@ -12,7 +12,7 @@ All you have to do is to fill in .yml file — no programming stuff
   <li>make</li>
 </ul>
 
-<h3>What excatly should I do?</h3>
+<h3>What exactly should I do?</h3>
 <ul>
   <li><code>git clone https://github.com/niki-gor/menubot.git</code></li>
   <li>Write to <a href=https://github.com/niki-gor/menubot/blob/dev/config/menu.yml>config/menu.yml</a> stuff that suites you</li>
