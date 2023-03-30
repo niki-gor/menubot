@@ -3,7 +3,7 @@
 <img src=https://s10.gifyu.com/images/2023-03-30-14-36-501.gif></img>
 
 <h3>How to do it?</h3>
-All you have to do is to fill in .yml file — no programming stuff. Just run a command or two
+All you have to do is to fill in .yml file — no programming stuff
 <img src=https://i.ibb.co/vJHJSNF/Screenshot-20230330-151921.png></img>
 
 <h3>Which software should I have to run this?</h3>
