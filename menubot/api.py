@@ -50,7 +50,7 @@ class Router:
         await self._main_menu_message_handler(call.message)
 
     def setup_routes(self, dp: Dispatcher):
-        self.dp.register_message_handler(
+        dp.register_message_handler(
             self._main_menu_message_handler, commands=["start"]
         )
 
