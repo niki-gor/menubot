@@ -21,7 +21,7 @@ class Router:
     def __init__(self, config: HandlerConfig):
         self.main_menu_text = config.main_menu_text
         self.home_button_text = config.home_button_text
-        self.page_name_prefix = config.page_name_prefix
+        self.page_name_format = config.page_name_format
         self.pages = [PageDecorator(page) for page in config.pages]
         self.main_menu_keyboard = InlineKeyboardMarkup(row_width=1)
         for page in self.pages:
@@ -39,7 +39,7 @@ class Router:
 
         async def handler(call: types.CallbackQuery):
             await call.message.answer(
-                text=f"{self.page_name_prefix}{page.name}", reply_markup=kb
+                text=self.page_name_format.format(page.name), reply_markup=kb
             )
 
         return handler

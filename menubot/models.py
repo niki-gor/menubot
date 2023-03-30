@@ -15,5 +15,5 @@ class Page(BaseModel):
 class HandlerConfig(BaseModel):
     home_button_text: str
     main_menu_text: str
-    page_name_prefix: str
+    page_name_format: str = '{}'
     pages: list[Page]
